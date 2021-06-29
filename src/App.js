@@ -12,6 +12,7 @@ import {
   View,
   Pressable,
 } from 'react-native';
+import { Header, Contents, Footer } from './components/Layout';
 
 const Button = (props) =>{
   return (
@@ -37,7 +38,12 @@ const App = () => {
           backgroundColor: '#fff',
           alignItems: 'center',
         }}>
-          <Button title="Pressable"/>
+          <Header></Header>
+          <Contents>
+             <Button title="Pressable"/>
+          </Contents>
+          <Footer></Footer>
+         
         </View>
   );
 };
